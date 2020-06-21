@@ -1,0 +1,24 @@
+cartefidelite_index:
+    path:     /
+    defaults: { _controller: "VenteBundle:CarteFidelite:index" }
+    methods:  GET
+
+cartefidelite_show:
+    path:     /{idCf}/show
+    defaults: { _controller: "VenteBundle:CarteFidelite:show" }
+    methods:  GET
+
+cartefidelite_new:
+    path:     /new
+    defaults: { _controller: "VenteBundle:CarteFidelite:new" }
+    methods:  [GET, POST]
+
+cartefidelite_edit:
+    path:     /{idCf}/edit
+    defaults: { _controller: "VenteBundle:CarteFidelite:edit" }
+    methods:  [GET, POST]
+
+cartefidelite_delete:
+    path:     /{idCf}/delete
+    defaults: { _controller: "VenteBundle:CarteFidelite:delete" }
+    methods:  DELETE

@@ -1,0 +1,25 @@
+all_facture:
+  path:     /facture/all
+  defaults: { _controller: EspritApiBundle:Facture:all }
+
+find_task:
+  path:     /facture/find/{id}
+  defaults: { _controller: EspritApiBundle:Facture:find}
+
+login:
+  path:     /login
+  defaults: { _controller: EspritApiBundle:FosUser:login }
+
+client_facture:
+  path:     /facture/client
+  defaults: { _controller: EspritApiBundle:Facture:client }
+
+all_transaction:
+  path:     /transaction/all
+  defaults: { _controller: EspritApiBundle:Transaction:all }
+
+client_transaction:
+  path:     /transaction/client
+  defaults: { _controller: EspritApiBundle:Transaction:client }
+
+

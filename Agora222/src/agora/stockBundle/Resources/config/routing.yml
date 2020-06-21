@@ -1,0 +1,127 @@
+stock_homepage:
+  path:     /
+  defaults: { _controller: stockBundle:Default:index }
+
+products:
+  path:     /products
+  defaults: { _controller: stockBundle:Default:listProducts }
+
+productsByCatg:
+  path:     /products/categories/{catg}
+  defaults: { _controller: stockBundle:Default:listProductsByCatg }
+
+productsByMarq:
+  path:     /products/marques/{marq}
+  defaults: { _controller: stockBundle:Default:listProductsByMarq }
+
+Search:
+  path:     /search
+  defaults: { _controller: stockBundle:Default:searchProducts }
+
+FilterByPrice1:
+  path:     /Filter1
+  defaults: { _controller: stockBundle:Default:FilterProducts1 }
+
+FilterByPrice2:
+  path:     /Filter2
+  defaults: { _controller: stockBundle:Default:FilterProducts2 }
+
+FilterByPrice3:
+  path:     /Filter3
+  defaults: { _controller: stockBundle:Default:FilterProducts3 }
+
+FilterByPrice4:
+  path:     /Filter4
+  defaults: { _controller: stockBundle:Default:FilterProducts4 }
+
+FilterByPrice5:
+  path:     /Filter5
+  defaults: { _controller: stockBundle:Default:FilterProducts5 }
+
+listProdService:
+  path:     /listProdService
+  defaults: { _controller: stockBundle:mobServices:listProducts }
+
+AddProdService:
+  path:     /AddProdService
+  defaults: { _controller: stockBundle:mobServices:AddProduct }
+
+ListCatgService:
+  path:     /ListCatgService
+  defaults: { _controller: stockBundle:mobServices:Allcatg }
+
+ListMarqService:
+  path:     /ListMarqService
+  defaults: { _controller: stockBundle:mobServices:Allmarqs }
+
+FilterMarqService:
+  path:     /FilterMarqService
+  defaults: { _controller: stockBundle:mobServices:findByMarq }
+
+FilterCatgService:
+  path:     /FilterCatgService
+  defaults: { _controller: stockBundle:mobServices:findByCatg }
+
+FindProdService:
+  path:     /FindProdService
+  defaults: { _controller: stockBundle:mobServices:findProduct }
+
+FindProdByIdService:
+  path:     /FindProdByIdService
+  defaults: { _controller: stockBundle:mobServices:findProductById }
+
+AddRatingService:
+  path:     /AddRatingService
+  defaults: { _controller: stockBundle:mobServices:AddRating }
+
+contact:
+  path:     /ContactUs
+  defaults: { _controller: stockBundle:Default:Contact }
+
+sendMail:
+  path:     /sendMail
+  defaults: { _controller: stockBundle:Default:sendMail }
+
+listvehiculeservice:
+  path:     /listvehicule
+  defaults: { _controller: stockBundle:EquipementService:affichervehicule }
+
+newvehicule:
+  path:     /addvehicule
+  defaults: { _controller: stockBundle:EquipementService:ajoutvehicule }
+
+editvehicule:
+  path:     /editvehicule
+  defaults: { _controller: stockBundle:EquipementService:modifiervehicule }
+
+deletevehicule:
+  path:     /deletevehicule
+  defaults: { _controller: stockBundle:EquipementService:supprimervehicule }
+
+listMaterielsservice:
+  path:     /listMateriels
+  defaults: { _controller: stockBundle:EquipementService:afficherMateriels }
+
+newMateriels:
+  path:     /addMateriels
+  defaults: { _controller: stockBundle:EquipementService:ajoutMateriels }
+
+editMateriels:
+  path:     /editMateriels
+  defaults: { _controller: stockBundle:EquipementService:modifierMateriels }
+
+deleteMateriels:
+  path:     /deleteMateriels
+  defaults: { _controller: stockBundle:EquipementService:supprimerMateriels }
+
+listhistoriqueequipementservice:
+  path:     /listhistoriqueequipement
+  defaults: { _controller: stockBundle:EquipementService:afficherhistoriqueequipement }
+
+edithistoriqueequipement:
+  path:     /edithistoriqueequipement
+  defaults: { _controller: stockBundle:EquipementService:modifierhistoriqueequipement }
+
+deletehistoriqueequipement:
+  path:     /deletehistoriqueequipement
+  defaults: { _controller: stockBundle:EquipementService:supprimerhistoriqueequipement }

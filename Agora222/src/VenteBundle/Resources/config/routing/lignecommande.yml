@@ -1,0 +1,24 @@
+lignecommande_index:
+    path:     /
+    defaults: { _controller: "VenteBundle:LigneCommande:index" }
+    methods:  GET
+
+lignecommande_show:
+    path:     /{id}/show
+    defaults: { _controller: "VenteBundle:LigneCommande:show" }
+    methods:  GET
+
+lignecommande_new:
+    path:     /new
+    defaults: { _controller: "VenteBundle:LigneCommande:new" }
+    methods:  [GET, POST]
+
+lignecommande_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "VenteBundle:LigneCommande:edit" }
+    methods:  [GET, POST]
+
+lignecommande_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "VenteBundle:LigneCommande:delete" }
+    methods:  DELETE

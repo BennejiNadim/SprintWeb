@@ -1,0 +1,81 @@
+vente_commande:
+    resource: "@VenteBundle/Resources/config/routing/commande.yml"
+    prefix:   /commande
+
+
+vente_cartefidelite:
+    resource: "@VenteBundle/Resources/config/routing/cartefidelite.yml"
+    prefix:   /cartefidelite
+
+vente_lignecommande:
+    resource: "@VenteBundle/Resources/config/routing/lignecommande.yml"
+    prefix:   /lignecommande
+
+
+vente_livraison:
+    resource: "@VenteBundle/Resources/config/routing/livraison.yml"
+    prefix:   /livraison
+
+vente_homepage:
+    path:     /panier
+    defaults: { _controller: VenteBundle:Default:panier }
+
+
+vente_prod:
+    path:     /prod
+    defaults: { _controller: "VenteBundle:Default:produit" }
+
+
+vente_cartefid:
+    path:     /cartefid
+    defaults: { _controller: "VenteBundle:Default:cartefid" }
+
+vente_checkout:
+    path:     /checkout
+    defaults: { _controller: "VenteBundle:Panier:checkout" }
+
+addProduit:
+    path:     /addProduit/{idp}/{qte}
+    defaults: { _controller: "VenteBundle:Panier:addProduit" }
+
+setProduit:
+    path:     /setProduit/{idp}/{qte}
+    defaults: { _controller: "VenteBundle:Panier:setProduit" }
+
+pdf:
+    path:     /pdf
+    defaults: { _controller: "VenteBundle:Default:pdf" }
+
+calendar:
+    path:     /calendar
+    defaults: { _controller: "VenteBundle:Default:calendar" }
+
+prod:
+    path:     /wsprod
+    defaults: { _controller: "VenteBundle:Default:wsprod" }
+
+wsCommandes:
+    path:     /wsCommandes
+    defaults: { _controller: "VenteBundle:Default:wsCommandes" }
+
+wsCartefid:
+    path:     /wsCartefid
+    defaults: { _controller: "VenteBundle:Default:wsCartefid" }
+
+wsCartefidPoints:
+    path:     /wsCartefidPoints
+    defaults: { _controller: "VenteBundle:Default:wsCartefidPoints" }
+
+wsCheckOut:
+    path:     /wsCheckOut/{p}
+    defaults: { _controller: "VenteBundle:Default:wsCheckOut" }
+
+wsDetailsCommandes:
+    path:     /wsDetailsCommandes
+    defaults: { _controller: "VenteBundle:Default:wsDetailsCommandes" }
+wsLogin:
+    path:     /wsLogin
+    defaults: { _controller: "VenteBundle:Default:wsLogin" }
+distance:
+    path:     /distance/{ville}
+    defaults: { _controller: "VenteBundle:Panier:distance" }
